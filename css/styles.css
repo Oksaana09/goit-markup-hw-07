@@ -397,7 +397,7 @@ body {
     }
 
     .address-item:not(:last-child) {
-        margin-bottom: 4px;
+        margin-bottom: 12px;
     }
 
     .address-link {
@@ -910,16 +910,18 @@ screen and (min-resolution: 2dppx) {
 
 .footer-soc {
     margin-bottom: 72px;
+    text-align: center;
 }
 
 .footer-soc-title,
 .subscribe-title {
     margin-bottom: 16px;
-    text-align: center;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--white-color);
+
 }
 
 .footer-soc-list {
@@ -940,7 +942,7 @@ screen and (min-resolution: 2dppx) {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--pressed-state-color);
     transition: background-color var(--timing-function);
 }
 
@@ -957,6 +959,7 @@ screen and (min-resolution: 2dppx) {
 
 .footer-subscribe {
     width: 100%;
+    text-align: center;
 }
 
 .subscribe-field {
@@ -1012,7 +1015,12 @@ screen and (min-resolution: 2dppx) {
 
 @media screen and (min-width: 768px) {
     .footer-container {
-        padding-left: 108px;
+        width: 582px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer-container {
         flex-direction: row;
         flex-wrap: wrap;
         column-gap: 24px;
@@ -1051,9 +1059,13 @@ screen and (min-resolution: 2dppx) {
         padding-bottom: 100px;
     }
 
+        .footer-container {
+            width: 1158px;
+        }
     .footer-container {
         padding-left: 15px;
         flex-direction: row;
+        display: flex;
         flex-wrap: nowrap;
         column-gap: 0;
     }
